@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "tickefier",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": {
+    "matches": [
+      "https://appdynamics.zendesk.com/*",
+      "http://appdynamics.zendesk.com/*"
+    ],
+    "js": ["content.js"]
+  },
+  "browser_action": "icon.png"
+}
